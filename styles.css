@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    background-color: #e9e0d1;
+    display: flex;
+    color: #4b3e31;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #bfa785;
+    padding: 20px;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.sidebar-nav a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-nav a:hover {
+    background-color: #ddc4a1;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 270px;
+    padding: 40px;
+    width: calc(100% - 270px);
+}
+
+header h1 {
+    font-size: 2.6rem;
+    color: #5d4b3c;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.9rem;
+    color: #745c4a;
+    margin-bottom: 15px;
+}
+
+.fade-in {
+    margin: 25px 0;
+    padding: 20px;
+    border: 1px solid #c6b5a2;
+    border-radius: 10px;
+    background-color: #f9f4e8;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s forwards;
+}
+
+/* Inputs and Buttons */
+label, .sidebar p, .quotes {
+    font-weight: bold;
+    color: #5a4a3b;
+}
+
+select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #c9b8a9;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #745c4a;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5d4b3c;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.journal-history ul, .selfcare ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.journal-history li, .selfcare li {
+    background-color: #f5eedd;
+    padding: 15px;
+    border: 1px solid #d6cbbd;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-align: left;
+}

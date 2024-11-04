@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Journal & Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <h2>Navigate</h2>
+        <nav class="sidebar-nav">
+            <a href="#about">About</a>
+            <a href="#understanding">Understanding Mental Health</a>
+            <a href="#tracker">Mood Tracker</a>
+            <a href="#journal">Daily Journal</a>
+            <a href="#selfcare">Self-Care Tips</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <h1>Mental Health Journal & Tracker</h1>
+        </header>
+
+        <section id="about" class="fade-in">
+            <p><strong>Creator:</strong> Kashish Manav, Roll No. 23520055</p>
+            <p><strong>Project:</strong> Second-year BA Hons Journalism student at Kalindi College, INM Project</p>
+            <p>This website is designed as a safe space to help track emotions, reduce stress, and promote mental well-being.</p>
+        </section>
+
+        <section id="understanding" class="fade-in">
+            <h2>Understanding Mental Health</h2>
+            <p>Mental health encompasses emotional, psychological, and social well-being. It affects how we think, feel, and act. Reflecting on our daily mental state helps in identifying patterns and stressors, supporting a journey to inner peace.</p>
+        </section>
+
+        <section id="tracker" class="fade-in">
+            <h2>Track Your Mood</h2>
+            <label for="mood">How are you feeling today?</label>
+            <select id="mood">
+                <option value="Happy">😊 Happy</option>
+                <option value="Content">🙂 Content</option>
+                <option value="Stressed">😟 Stressed</option>
+                <option value="Anxious">😰 Anxious</option>
+                <option value="Sad">😢 Sad</option>
+            </select>
+            <canvas id="moodChart" width="400" height="200"></canvas>
+        </section>
+
+        <section id="journal" class="fade-in">
+            <h2>Daily Journal</h2>
+            <label for="entry">Write about your day:</label>
+            <textarea id="entry" placeholder="Start writing here..."></textarea>
+            <button onclick="saveEntry()">Save Entry</button>
+        </section>
+
+        <section id="selfcare" class="fade-in">
+            <h2>Self-Care Tips</h2>
+            <ul>
+                <li>Practice mindfulness and meditation to center your thoughts.</li>
+                <li>Take breaks from screens and social media when feeling overwhelmed.</li>
+                <li>Stay hydrated and prioritize good nutrition.</li>
+                <li>Engage in physical activities or hobbies you enjoy.</li>
+                <li>Reach out to a friend or family member if you need to talk.</li>
+            </ul>
+        </section>
+
+        <section class="journal-history fade-in">
+            <h2>Your Past Entries</h2>
+            <ul id="entriesList"></ul>
+        </section>
+
+        <section class="quotes fade-in">
+            <h2>Daily Inspiration</h2>
+            <p id="quoteDisplay">"Remember, taking small steps forward is still progress."</p>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
